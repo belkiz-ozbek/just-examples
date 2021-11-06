@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	
+	//c given a length in feet, convert it into milimeters
+	
+	//1 foot = 12 inches
+	//1 inches = 2.54 cm
+	double foot;
+	foot = 12*2.54;
+	
+	printf("1 foot= %f cm",foot );
+
+	return 0;
+}
