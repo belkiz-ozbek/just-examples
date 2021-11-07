@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+
+//Take a quantity given in TL and find the VAT(KDV) for this amount if VAT rate is 8%
+
+int TL;
+double KDV,result;
+
+printf("Enter a number: ");
+scanf("%d",&TL);
+
+//KDV=0.08
+
+result=TL*1.08;
+
+printf("\nresult is with KDV of TL is %f",result);
+
+
+return 0;
+}
