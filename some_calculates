@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#define PI 3.1416
+
+int main (void){
+	
+	double area,perimeter,diameter,r;
+	
+	diameter=3.0;
+	r=diameter/2;
+	area= PI*r*r;
+	
+	printf("Area of a circle %f",area);
+
+		perimeter=2*PI*r;
+	
+	printf("\nPerimeter of a circle %f",perimeter);
+	
+
+	
+	return 0;
+}
