@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define PI 3.1416
+int main(void) {
+	
+	double volume, surface_area,r,h;
+	
+	printf("Enter a number: ");
+	scanf("%lf",&r);
+	
+	printf("Enter a number: ");
+	scanf("%lf",&h);
+	
+	volume=PI*r*r*h;
+	
+	printf("The volume is %.2f",volume);
+	
+	surface_area=2*PI*r*r+2*PI*r*h;
+	
+	printf("The surface_arae is %.2f",surface_area);	
+	
+		
+return 0; 
+}
