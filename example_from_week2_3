@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main ()
+{
+	
+	int x=5, y=-2;
+	char c='W';
+	double d=1.4;
+	 
+	printf("x=%d\td=%f\ny=%d\tc=%c", x,d,y,c);
+	
+	
+	
+	return 0;
+}
