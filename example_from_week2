@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define KG_PER_POUND 0.453592
+
+int main (void)
+{
+	double pounds;
+	double kilograms, grams;
+	
+	printf("Enter weight in pounds: ");
+	scanf("%lf", &pounds);
+	
+	kilograms= pounds*KG_PER_POUND;
+	grams=kilograms*1000;
+	
+	printf("%.2 pounds is %.2f kilograms and %.2f grams",pounds, kilograms,grams);
+		return 0;
+}
