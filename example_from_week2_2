@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main ()
+{
+	int c;
+	c=5;
+	
+	printf("---\n");
+	printf("%2d\n",c);
+	printf("%2d\n",c++);
+	printf("%2d\n",c);
+	printf("---\n");
+	
+	c=5;
+	
+	printf("%2d\n",c);
+	printf("%2d\n",++c);
+	printf("%2d\n",c);
+	printf("---\n");
+		
+	return 0;
+}
