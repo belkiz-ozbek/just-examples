@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (void)
+{
+double grade1, grade2,average;
+
+printf("Enter two grades: ");
+scanf("%lf %lf",&grade1,&grade2);
+
+average=(grade1+grade2)/2;
+
+printf("\nThe average is: %.2f",average);
+
+if(average<50)
+	printf("\n unsuccessful");
+
+else
+	printf("\nsuccessful");
+
+
+return 0;	
+}
+
+
