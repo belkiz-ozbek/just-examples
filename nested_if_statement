@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main (void)
+{
+
+double grade1, grade2, average;
+char took;
+
+printf("Enter two grades: ");
+scanf("%lf %lf", &grade1,&grade2);
+
+	average=(grade1+grade2)/2.0;
+printf("\nYour average is %f",average);
+if (average<50)
+{
+printf("\nDid the student take the exam before? (Y/N): ");
+scanf(" %c", &took);
+if(took=='Y')
+printf("\n Unsuccessful and you do not have a chance");
+else 
+printf("\n Unsuccessful but you have a chance");
+}
+else 
+printf("\nSuccessful");
+	return 0;
+}
