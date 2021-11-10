@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main (void)
+{
+
+	double c,a,b;
+	
+	printf("First enter 'a' and then 'b': ");
+	scanf("%lf %lf",&a,&b);
+	
+	if (b==0)
+	
+		
+	if(a>=0)
+	{ c= sqrt(a);
+	printf("sqrt (%.2f)=%.2f\n",a,c);
+	}
+
+else;
+	else
+	{  c=a/b;
+	printf("%.2f/%.2f=%.2f",a,b,c);
+	}
+		
+	return 0;
+}
