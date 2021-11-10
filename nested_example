@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (void)
+{
+	
+	//This program displays the category of the wind
+	
+	double speed;
+	
+	printf("Enter the wind speed in mph: ");
+	scanf("%lf",&speed);
+	
+	if(speed<25)
+	printf("\nNot a strong wind");
+	
+	else if (speed<39)
+	printf("\n Strong wind");
+	
+	else if(speed<55)
+	printf("\n Gale");
+	
+	else if(speed<72 && speed==72)
+	printf("\nWhole gale");	
+	
+	else 
+	printf("\n Hurricane");
+	
+	return 0;
+}
+
