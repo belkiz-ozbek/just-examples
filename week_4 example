@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main (void){
+
+
+int cust_id;
+char pay_code;
+double pay,bill;
+
+printf("Eneter the customer ID: ");
+scanf("%d",&cust_id);
+
+printf("Enter the customer's bill: ");
+scanf("%lf",&bill);
+
+printf("Will the customer pay now or later(N/L): ");
+scanf(" %c",&pay_code);
+
+if(pay_code=='N')
+	pay=bill;
+else
+pay=bill*1.05;
+
+
+printf("customer ID: %d Payment=%0.2f YTL", cust_id,pay);
+
+}
