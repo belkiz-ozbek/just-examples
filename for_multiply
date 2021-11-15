@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+int main (void){
+
+int i,n;
+double multiply=1;
+
+printf("enter n: ");
+scanf("%d",&n);
+
+for(i=n; i<=15; i++){
+	multiply*=((pow(i-1,2))/(i*i));
+}
+
+printf("multiply result is: %.2f",multiply);
+}
