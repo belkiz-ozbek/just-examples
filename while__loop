@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main (void)
+{
+	char gender;
+	int num_m,num_f;
+	
+	num_m=0;
+	num_f=0;
+	
+	printf("enter the gender of the first student(M,F,m,f): ");
+	scanf(" %c",&gender);
+	
+	//repeat for each student. stop when any character other than M,F,m,f
+	
+	while(gender=='M'||gender=='F'||gender=='m'||gender=='f'){
+	
+	
+	if(gender=='M'||gender=='m')
+	num_m++;
+	
+	else if(gender=='F'||gender=='f')
+	num_f++;
+	
+	else{
+	return 0;
+}
+	printf("\nEnter the gender again");
+	scanf(" %c",&gender);
+
+	}
+	printf("\n num_m= %d \n num_f= %d ",num_m,num_f);
+}
