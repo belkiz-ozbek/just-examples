@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main (void)
+{
+	int pop1,pop2;
+	int days,hours,num_hours;
+	
+	num_hours=0;
+	
+	printf("with how many organisms will you start? ");
+	scanf("%d",&pop1);
+	
+	printf("to how many organisms do you want to reach? ");
+	scanf("%d",&pop2);
+	
+	while(pop1<pop2){
+		num_hours+=10;
+		pop1*=2;
+	}
+	
+	days=num_hours/24;
+	hours=num_hours%24;
+	
+	printf("in %d days and %d hours, you will have %d organisms.\n",days,hours,pop1);
+	
+}
