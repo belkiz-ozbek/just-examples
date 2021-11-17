@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <math.h>
+int main (void)
+{
+	int j,k,m;
+	for(k=1; k<=4; k++)
+		for(j=0; j<8; j+=2)
+			for(m=5; m>0; m-=3)
+				printf("*");
+}			
