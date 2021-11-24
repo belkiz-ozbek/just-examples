@@ -1,0 +1,26 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <math.h>
+
+void  fonksiyon(double number){
+    int i,r;
+    double f;
+    
+    i=floor(number);
+    r=round(number);
+    f=number-i;
+    
+    printf("integer part: %d, fractional part: %f, rounded number: %d",i,f,r);
+    
+    
+}
+int main() {
+    float number;
+    
+    printf("Enter float number : ");
+    scanf("%f", &number);
+    
+    fonksiyon(number);
+    
+    return 0;
+}
