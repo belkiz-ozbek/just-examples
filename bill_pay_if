@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	
+	int ID;
+	int pay,bill;
+	char when;
+	
+	printf("Enter the customer's ID: ");
+	scanf("%d",&ID);
+	
+	printf("What is the bill: ");
+	scanf("%d",&bill);
+	
+	printf("Now(N) and Later(L) Which one: ");
+	scanf(" %c", &when);
+	
+	if(when=='L'){
+		pay=bill*1.05;
+		printf("customer's ID: %d and pay=%d",pay,ID);
+	}
+	else{
+		pay=bill;
+		printf("customer's ID: %d and pay=%d",pay,ID);
+	}
+	return 0;
+}
