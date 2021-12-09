@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// A function that draws a square
+
+void draw_square(int n){
+	
+	int i,j;
+	
+	for(i=0; i<n; i++){
+		for(j=0; j<n; j++){
+			printf("*");
+		}
+		printf("\n");
+	}
+	
+}
+int main (void){
+	
+	draw_square(5);	
+}
+		
+ 	                
