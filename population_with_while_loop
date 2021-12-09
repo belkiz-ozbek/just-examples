@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	
+	int pop1,pop2;			// initial population(pop1)	final population(pop2)
+	int days,hours,num_hours;
+	
+	num_hours=0;
+	
+	printf("Enter pop1: ");
+	scanf("%d",&pop1);
+	printf("Enter pop2: ");
+	scanf("%d",&pop2);
+	
+	while(pop2>pop1){
+		num_hours+=10;
+		pop1*=2;
+	}
+	
+	days=num_hours / 24;
+	hours=num_hours % 24;
+	
+	printf("In %d days and %d hours, you will have %d organisms.\n",days,hours,pop1);
+	
+	return 0;
+}
