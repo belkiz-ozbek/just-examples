@@ -1,0 +1,17 @@
+int main(int argc, char *argv[]) {
+	
+	int a,*pt1,*pt2;
+	
+	a=12;
+	pt1=&a;
+	pt2=pt1;
+	
+	printf("%d %d %d",a,*pt1,*pt2);
+	
+	*pt1=13;
+	
+	printf("\n%d %d %d",a,*pt1,*pt2);
+	
+	
+	return 0;
+}
