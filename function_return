@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int gizem(int,int);
+
+int main(int argc, char *argv[]) {
+	
+	int x,y;
+	
+	printf("iki tam sayi girin: ");
+	scanf("%d%d",&x,&y);
+	printf("Sonuc%d\n",gizem(x,y));
+	return 0;
+}
+	// b parametresi, sonsuz yineleme olmaması icin pozitif olmak zorunda
+	int gizem(int a,int b)
+	{
+		if(b==1)
+			return a;
+		else
+			return a+gizem(a,b-1);
+	
+
+}
