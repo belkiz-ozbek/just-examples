@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// a function that displays a line of n characters
+
+void draw_char(int n, char ch){
+	int i;
+	for(i=1; i<=n; i++)
+	printf("%c",ch);
+	printf("\n");
+}
+int main(){
+	draw_char(5,'#');
+	draw_char(5,'*');
+}
+
