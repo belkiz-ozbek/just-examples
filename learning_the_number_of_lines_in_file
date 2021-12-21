@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+main()
+{
+	char a = '*',sonraki,dosya_adi[20];
+	int satir = 0;
+	puts("Dosya adi girniz: ");
+	scanf("%s",dosya_adi);
+	FILE *f;
+	f = fopen(dosya_adi,"r");
+	if(f==NULL)
+	{
+		puts("dosya acilmadi");
+		getch();
+		exit(1);
+	}
+	
+	
+	while(a != EOF)	//dosyanın sonuna kadar
+	{
+		a = fgetc(f);	//karakter oku
+		if(a == '\n')	//alt satıra geçme, satır sonu karakter mi
+		{
+			satir++;
+			sonraki = fgetc(f);
+		}
+	}
+	
+	/* alt satıra geçilmiş ancak herhangi bir karakter girilmemişse 
+	ya da satır sonunda alt satıra geçilmeeden bitirilmişse */
+	
+	if(sonraki!=EOF)
+		satir++;
+		printf("%d satir  var",satir);
+		getch(); 
+	
+}
