@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <conio.h>
+main() 
+{
+	FILE *f;
+	int x,y,z;
+	f = fopen("toplam.txt","w");
+	if(f==NULL)
+	{
+		puts("Dosya acilamiyor...\n");
+	}
+	printf("Toplanacak iki sayi girin: ");
+	scanf("%d %d",&x,&y);
+	z=x+y;
+	fputs("Bu sayilarin toplami!\n",f);
+	fprintf(f,"%d + %d = %d",x,y,z);
+	fclose(f);
+	getch();
+}
