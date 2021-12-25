@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	
+float kilo;
+float *kilo_adresi;
+kilo_adresi = &kilo;
+printf("Kac kilosunuz?: ");
+scanf("%f",&kilo);
+printf("Kilo degiskeninin adresi %p\n",&kilo);
+printf("Kilo degiskeninde saklanan sayi: %f\n",kilo);
+printf("Kilo_adresi isaretcesinin tututugu adres: %p\n",&kilo_adresi);
+printf("kilo_adresi isaretcesinin tuttugu adresteki sayi: %f\n",*kilo_adresi);
+
+	return 0;
+}
