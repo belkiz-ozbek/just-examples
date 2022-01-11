@@ -1,0 +1,51 @@
+#include<stdio.h>
+
+	
+	int summation(int x, int y);
+	int substraction(int x, int y);
+	int multiplication(int x, int y);
+	float divide(int x, int y);
+	int take_mod(int x, int y);
+	void uyari();
+	
+	int main(void){
+		
+		int x,y;
+		int tercih;
+		printf("İslem yapmak istediginiz iki sayiyi girin: ");
+		scanf("%d %d",&x,&y);
+		printf("Hangi islemi yapmak istiyorsunuz?: ");
+		printf("toplama islemi icin 1/ \n cikarma islemi yapmak icin 2/ \n carpma islemi yapmak icin 3/ \n bolme yapmak icin /4 \n bolme islemi yapmak icin 5/ \n ");
+		scanf("%d tercih",&tercih);
+		if(tercih == 1)            printf("%d +  %d = %d ",x,y,summation(x,y));
+		else if(tercih == 2)        printf("%d - %d = %d", x,y, substraction(x,y));
+		else if(tercih == 3)        printf("%d * %d = %d", x,y, multiplication(x,y));
+		else if(tercih == 4)        printf("%d / %d = %d",x,y,divide(x,y));
+		else if(tercih == 5)        printf("%d mod %d = %d", x,y,take_mod(x,y));
+		else                       uyari();
+	
+}
+int summation(int x, int y){{}
+	return x+y;
+}
+int substraction(int x,int y){
+	return x-y;
+}
+int multiplication(int x,int y){
+	return x*y;
+}
+float divide(int x, int y){
+	return x / y;
+}
+int take_mod(int x, int y){
+	return x % y;
+}
+
+void uyari(){
+	printf("Yanlis bir secim yaptiniz. ");
+}
+
+
+
+
+
