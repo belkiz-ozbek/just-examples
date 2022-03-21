@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+
+	int num1, num2;
+	int operations;
+	
+	printf("Enter two number: ");
+	scanf("%d %d", &num1, &num2);
+	
+	printf("Choose an operations: (1-addition)(2-substraction)(3-multiplication)");
+	scanf("%d",&operations);
+	
+	switch(operations){
+	case 1:
+		printf("num1 + num2 = %d",num1 + num2);
+		break;
+	case 2:
+		printf("num1 - num2 = %d",num1 - num2);
+		break;
+	case 3:
+		printf("num1*num2 = %d",num1 * num2);
+		break;
+	}
+
+	return 0;
+}
