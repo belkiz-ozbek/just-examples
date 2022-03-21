@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+
+	double num1, num2;
+	int choice;
+	
+	printf("Enter two numbers: ");
+	scanf("%lf %lf",&num1, &num2);
+	
+	do{
+		printf(" 1) Add\n");
+		printf(" 2) Substract\n");
+		printf(" 3) Multiply\n");
+		printf(" 4) Divide\n");
+		printf("Enter your choice: ");
+		scanf("%d",&choice);
+	}while(choice < 1 || choice > 4);
+	
+	switch(choice){
+		case 1: 
+		printf("result = %f\n",num1 + num2);
+		break;
+		case 2: 
+		printf("result = %f\n",num1 - num2);
+		break;
+		case 3: 
+		printf("result = %f\n",num1 * num2);
+		break;
+		case 4: while(num2 == 0){
+			printf("Please reenter num2: ");
+			scanf("%lf",&num2);
+		}
+		printf("result = %f\n",num1 / num2);
+
+		break;
+	}
+
+	return 0;
+}
