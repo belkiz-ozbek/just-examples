@@ -30,3 +30,21 @@ int add(int a, int b){
 }
 
 */
+
+/*
+#include<stdio.h>
+
+double meters_to_miles(double meters){
+	double miles;
+	miles = meters / 1609.344;
+	return(miles);
+}
+int main(void){
+	double meters;
+	
+	printf("Enter a number as fallows meters: ");
+	scanf("%lf", &meters);
+	
+	printf("%f meters equal to %f miles",meters, meters_to_miles(meters));
+}
+*/	
