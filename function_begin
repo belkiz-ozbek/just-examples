@@ -48,3 +48,32 @@ int main(void){
 	printf("%f meters equal to %f miles",meters, meters_to_miles(meters));
 }
 */	
+
+
+
+
+/*#include<stdio.h>
+#include<stdlib.h>
+
+int fact(int n){
+
+int k, factorial = 1;
+	
+	for(k = 1; k <= n; k++){
+		factorial *= k;
+	}
+	
+	return(factorial);
+}
+
+int main(){
+	
+	int n;
+	
+	printf("Enter a number: ");
+	scanf("%d", &n);
+	
+	printf("Factorial of n is: %d ", fact(n));
+	
+}
+*/
