@@ -107,3 +107,35 @@ int main(){
 	
 }
 */
+
+
+
+/*#include<stdio.h>
+#include<stdlib.h>
+
+double min3(double num1, double num2, double num3){
+
+double min;
+
+if(num1 < num2 && num1 < num3)
+	min = num1;
+else if(num2 < num1 && num2 < num3)
+	min = num2;
+else
+	min = num3;
+	
+return(min);	
+}
+
+int main(){
+	
+double num2, num1, num3;
+
+printf("Enter three number: ");
+scanf("%lf %lf %lf",&num1, &num2, &num3);
+
+printf("The minimum number is = %f", min3(num1, num2, num3));
+	
+}
+
+*/
