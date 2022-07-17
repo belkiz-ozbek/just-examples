@@ -139,3 +139,32 @@ printf("The minimum number is = %f", min3(num1, num2, num3));
 }
 
 */
+
+
+/*
+#include<stdio.h>
+#include<stdlib.h>
+
+void isEven(int number){
+	
+	
+	if(number % 2 == 1){
+		printf("This number is odd. \n");	
+	}
+	else
+		printf("This number is even. \n");
+		
+}
+
+int main(){
+	
+	int number;
+	
+	printf("Enter a number: ");
+	scanf("%d", &number);
+	isEven(number);
+
+	
+}
+*
+7
