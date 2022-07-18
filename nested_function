@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+
+void draw_char(int n, char ch){
+	
+	int i;
+	
+	for(i = 1; i <= n; i++){
+		printf(" %c", ch);
+	}
+	
+}
+
+void draw_triangle(int n){
+	
+int k;	
+char ch;
+	for(k = 1; k <= n; k++){
+		draw_char(k, ch);
+		printf("\n");
+	}
+
+}
+
+int main(){
+	
+int n;	
+char ch;
+
+printf("Enter a number and a char: \n ");
+scanf("%d %c", &n, &ch);	
+
+draw_triangle(n);
+
+}
