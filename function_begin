@@ -167,3 +167,29 @@ int main(){
 	
 }
 */
+
+
+/*#include<stdio.h>
+#include<stdlib.h>
+
+void draw_nline(int n){
+	
+int k;	
+
+	for(k = 1; k <= n; k++){
+		printf("*");
+	}
+
+}
+
+int main(){
+	
+int n;	
+
+printf("Enter a number: ");
+scanf("%d", &n);	
+
+draw_nline(n);
+
+}
+*\
