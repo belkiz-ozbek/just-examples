@@ -1,3 +1,5 @@
+EXAMPLE 1;
+
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -16,3 +18,34 @@ int main (){
 	
 	return(0);
 }
+
+EXAMPLE 2;
+
+/*
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+	
+int var1 = 3, var2 = 5,         //integer variables
+	*pVar;						//pointer to integer memory area
+
+pVar = &var1;                   //store the adress of var1 into pVar pointer
+
+printf("\nContent of pointer  = %p\n", pVar);
+printf("Content of the memory area referred by pointer = %d\n", *pVar);
+
+*pVar = *pVar * 2;               //double the content of the memory ar
+
+printf("\nContent of pointer  = %p\n", pVar);
+printf("Content of the memory area referred by pointer = %d\n", *pVar);                                
+
+pVar = &var2;                   //store the address of var2 into pVar pointer
+
+
+printf("\nContent of pointer  = %p\n", pVar);
+printf("Content of the memory area referred by pointer = %d\n", *pVar);
+
+return (0);
+}
+*/
