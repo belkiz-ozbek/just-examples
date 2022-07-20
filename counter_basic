@@ -1,0 +1,85 @@
+EXAMPLE 1:
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(void){
+
+	int counter = 0;
+	
+	while(++counter <= 10){
+		printf("%d\n", counter);
+
+	}
+
+ 	return(0); 
+}
+
+EXAMPLE 2:
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(void){
+	
+	int counter;
+	
+	for(counter = 1; counter <= 10; counter++){
+		printf("%d\n", counter);
+	}
+	
+return(0); 
+}
+
+EXAMPLE 3:
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(void){
+	
+	int sum = 0;
+	int number ;
+	
+	for(number =  2; number <= 100; number += 2){
+		sum += number;
+	}
+	
+	printf("Sum is %d\n", sum);
+	
+return(0); 
+}
+
+EXAMPLE 4: 
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+int main(void){
+
+double amount;
+double principal = 1000.0;
+double rate = .05;
+int year; 
+
+printf("%4s%21s\n", "Year", "Amount on deposit\n");
+
+for(year = 1; year <= 10; year++){
+	
+	amount = principal * pow(1.0 + rate, year);
+	
+	printf("%4d%21.2f\n",year, amount);
+	
+}
+	
+return(0); 
+}
+
+
+EXAMPLE 5:
+
+
+
+
+
+
