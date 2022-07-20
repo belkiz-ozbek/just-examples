@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(void){
+int num = 0;
+int grade;
+int s_pass = 0, s_fail = 0;
+
+while(num < 10){
+	
+	printf("Enter your grade: \n");
+	scanf("%d", &grade);
+
+	if(grade == 1){
+		s_pass++;
+	}
+	else{
+		s_fail++;
+	}
+	num++;
+ }
+ 
+ printf("s_pass = %d s_fail = %d\n", s_pass, s_fail);
+ 
+ if(s_pass > 8){
+ 	printf("Raise tuition");
+ }
+ 
+ 
+ 	return(0); 
+}
+
+
