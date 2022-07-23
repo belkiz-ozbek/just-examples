@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main(){
+	
+	int i, j, yildiz_sayisi = 1;
+	int bosluk_sayisi = 9;
+	
+	for(i = 0; i < 10; i++){      //üçgenin satır sayısı
+		for(j = 0; j < bosluk_sayisi; j++){
+			printf(" ");
+			}
+			
+		for(j = 0; j < yildiz_sayisi; j++){
+				printf("*");
+		}
+			
+			printf("\n");
+			
+			yildiz_sayisi += 2;
+			bosluk_sayisi--;
+	}
+		return 0;	
+}
