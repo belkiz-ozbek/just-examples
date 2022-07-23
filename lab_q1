@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+int main(){
+
+int num;
+int i;
+int sum = 0;
+int get_num;
+
+
+printf("How many use numbers? ");
+scanf("%d", &num); 
+
+for(i = 1; i <= num; i++)
+{
+
+printf(" Enter number, you are summing");
+scanf("%d", &get_num);
+
+sum += get_num;
+
+}
+
+printf("%d", sum);
+
+
+	return 0;
+}
