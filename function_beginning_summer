@@ -1,0 +1,41 @@
+#include<stdio.h>
+
+int maximum(int x, int y, int z);
+
+int main(){
+	
+int number1;
+int number2;
+int number3;
+
+printf("Enter three integers:\n");
+scanf("%d%d%d", &number1, &number2, &number3);
+
+printf("Maximum is = %d\n", maximum(number1, number2, number3));
+
+	return 0;
+}
+
+int maximum(int x, int y, int z){
+	
+	int max_number;
+		
+if(x >= y && x >= z){
+	max_number = x;
+}		
+	
+else if(y >= x && y >= z){
+	max_number = y;
+}
+else if(z >= x && z >= y)
+	max_number = z;
+	
+	return(max_number);
+}
+
+
+
+
+
+
+
