@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main(){
+	
+	
+//EQUALİTY AND ASSİGNMENT
+	
+int payCode;
+
+printf("Enter a number: \n");
+scanf("%d", &payCode);
+
+if(payCode = 4){						// 4 İS NONZERO so expression ia true, and bonus awarded no matter what the payCode was
+	printf("You get a bonus!\n");
+}
+
+printf("Enter a number: \n");
+scanf("%d", &payCode);
+
+if(payCode == 4){
+	printf("You get a bonus!\n");
+}
+
+	return 0;
+}
