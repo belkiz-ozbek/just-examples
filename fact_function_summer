@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+
+//WRİTE A FACTORİAL FUNCTİON	
+
+int fact(int num);
+
+int main(){	
+
+int num;
+
+printf("Enter a number: \n");
+scanf("%d", &num);
+
+printf("%d! = %d", num, fact(num));
+
+	return 0;
+} 
+
+int fact(int num){
+	
+	int i;
+	int product = 1;
+	
+	for(i = 1; i <= num; i++){
+		product *= i; 
+	}
+return product;
+}
