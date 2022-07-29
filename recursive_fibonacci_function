@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+//fibonacci series
+
+long fibonacci(long number);
+
+ int main (){
+ 	
+ 	long number;
+ 	
+ 	printf("Enter a number: ");
+ 	scanf("%d", &number);
+	
+	printf("fibonacci(%d) = %ld\n", number, fibonacci(number));
+ }
+ 
+ long fibonacci(long number){
+ 	
+ 	//base case
+ 	
+ 	if(number == 0 || number == 1 )
+ 	
+ 	return number;
+ 	
+ 	else{
+ 		return fibonacci(number - 1) + fibonacci(number - 2);
+	 }
+ 	
+ }
