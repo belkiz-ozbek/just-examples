@@ -1,0 +1,68 @@
+#include<stdio.h>
+
+void printButterfly(int n);
+
+int main(){
+	
+	int number;
+	
+	printf("enter a number: ");
+	scanf("%d", &number);
+	
+	printButterfly(number);
+	
+	return 0;
+}
+
+void printButterfly(int n){
+	
+	int i, j, k, l, m, b, p;
+	int yildizSayisi = 1;
+	int boslukSayisi = 2 * (n - 1);
+	int yildiz = 1;
+	int yildiz2 = n - 1;
+	int yildiz3 = n - 1;
+	int boslukSayisi2 = 2;
+	
+	for(j = 0; j < n; j++){
+		
+		for(i = 1; i <= yildizSayisi; i++){
+			printf("*");
+		}
+		
+		for(k = 1; k <= boslukSayisi; k++){
+			printf(" ");
+		}
+		
+		for(l = 1; l <= yildiz; l++){
+			printf("*");
+		}
+	
+			yildiz++;
+			yildizSayisi++;
+			boslukSayisi -= 2;
+			printf("\n");
+	}
+	
+	for(j = 0; j < n; j++){
+		
+				for(m = 1; m <= yildiz2; m++){
+			printf("*");
+		}
+		
+		for(b = 1; b <= boslukSayisi2; b++){
+			printf(" ");
+		}
+		
+		for(p = 1; p <= yildiz3; p++){
+			printf("*");
+		}
+			yildiz2--;
+			yildiz3--;
+			boslukSayisi2 += 2;
+			printf("\n");
+		
+	}
+	
+}
+
