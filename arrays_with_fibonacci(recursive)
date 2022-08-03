@@ -1,0 +1,31 @@
+#include<stdio.h>
+
+int fbn(int number);
+
+int main(){
+
+int number = 1;
+int a[20];
+int i;
+
+for(i = 0; i < 20; i++){
+	
+	printf("a[%d] = %d\n", i, fbn(number) );
+	number++;
+}
+
+	
+	return 0;
+}
+
+int fbn(int number){
+	
+	//base case
+	
+	if(number == 1 ||number == 2)
+		return 1;
+
+	
+	return fbn(number - 1) + fbn(number - 2);
+}
+
