@@ -1,0 +1,10 @@
+#include<stdio.h>
+
+int main(){
+	
+	char array[5];
+	
+	printf("array = %p\n&array = %p\n&array[0] = %p", array, &array, &array[0]);
+	
+	return 0;
+}
