@@ -1,0 +1,51 @@
+#include<stdio.h>
+ 
+int max(int a[], int uzunluk){
+
+	int i;
+
+	int maks = a[0]; 
+	
+	for(i = 1; i < uzunluk; i++){
+		if(a[i] > maks){
+			maks  =a [i];
+		}
+	}
+return maks;
+}
+
+int main(){
+
+ int sayilar[5] = {1, 2, 89, 78, 54};
+ int maks = max(sayilar, 5);
+ 
+ printf("Sayilar dizisinin en buyuk elemani %d dir.", maks);
+	
+}
+
+/*
+#include<stdio.h>
+ 
+int max(int *a, int uzunluk){
+
+	int i;
+
+	int maks = a[0]; 
+	
+	for(i = 1; i < uzunluk; i++){
+		if(a[i] > maks){
+			maks  =a [i];
+		}
+	}
+return maks;
+}
+
+int main(){
+
+ int sayilar[5] = {1, 2, 89, 78, 54};
+ int maks = max(sayilar, 5);
+ 
+ printf("Sayilar dizisinin en buyuk elemani %d dir.", maks);
+	
+} 
+*/
