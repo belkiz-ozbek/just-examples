@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+int main(){
+	
+	int a;
+	int *aPtr;
+	
+	a = 7;
+	aPtr = &a;
+	
+	printf("The address of a is %p\nThe value of aPtr is %p\n\n", &a, &aPtr);
+	printf("The value of a is = %d\nThe value of aPtr = %p \n\n", a, aPtr);
+	printf("&*Ptr = %d\n*&aPtr = %p", &*aPtr, *&aPtr);
+	
+	return 0;
+}
