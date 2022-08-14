@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<string.h>
+
+void tersCevir(char array[]);
+
+int main(){
+	
+	char array[200];
+	
+	scanf("%s", array);
+	
+	tersCevir(array);
+}
+
+void tersCevir(char array[]){
+	
+	int uzunluk;
+	uzunluk = strlen(array);
+	int i;
+	int hold;
+	
+	for(i = 0; i != uzunluk / 2; i++){
+		hold = array[i];
+		array[i] = array[uzunluk - 1 - i];
+		array[uzunluk - 1 - i] = hold;
+	} 	
+	
+	printf("%s", array);
+	
+}
