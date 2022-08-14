@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int benimStrlen(char *p);
+
+int main(){
+
+	char array[] = "tala";
+
+	printf("%d", benimStrlen(array));
+
+return 0;	
+}
+
+int benimStrlen(char *p){
+	
+	int i = 0;
+	int uzunluk = 0;
+	
+	for( ; p[i] != '\0'; i++){
+		uzunluk++;
+	}
+
+
+return uzunluk;	
+}
