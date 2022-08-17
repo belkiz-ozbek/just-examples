@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+//herhangi bir parametreye sahip değildirler!
+
+int main(){
+	
+	char karakter;
+	//klavyeden bir karakter oku ve enter tusunu bekle
+	
+	printf("bir karakter giriniz ve enter tusuna basiniz: ");
+	karakter = getchar();
+	printf("girilen karakter:");
+	//okunan karakteri ekrana yazdir
+	putchar(karakter);
+	
+
+	return 0;
+}
