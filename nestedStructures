@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<string.h>
+
+struct Address{
+	char mahalle[20];
+	char cadde[28];
+	char sokak[15];
+};
+
+struct ogrenci{
+	char isim[15];
+	char soyisim[15];
+	int no;
+	int yas;
+	struct Address adres;
+};
+
+
+int main(){
+	
+	struct ogrenci ogrenci1;
+	
+	strcpy(ogrenci1.isim, "Mustafa");
+	strcpy(ogrenci1.soyisim, "kalem");
+	ogrenci1.no = 125;
+	ogrenci1.yas = 23;
+	strcpy(ogrenci1.adres.mahalle, "Bahcelievler");
+	strcpy(ogrenci1.adres.cadde, "Alacati");
+	strcpy(ogrenci1.adres.sokak, "Dam");
+	
+	
+	printf("%s %s %d %d %s %s %s", ogrenci1.isim, ogrenci1.soyisim, ogrenci1.no, ogrenci1.yas, ogrenci1.adres.mahalle, ogrenci1.adres.cadde, ogrenci1.adres.sokak);
+	
+	return 0;
+}
