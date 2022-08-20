@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+struct ogrenci{
+	char isim[15];
+	char soyisim[15];
+	int yas;
+};ogrenci1;
+
+int main(){
+	
+	struct ogrenci ogrenci1[3];
+	int i;
+	
+	for(i = 0 ;i < 3; i++){
+		printf("isim:\nsoyisim:\nyas:\n");
+		scanf("%s %s %d\n", &ogrenci1[i].isim, &ogrenci1[i].soyisim, &ogrenci1[i].yas);
+	}
+	
+	for(i = 0 ;i < 3; i++){
+		printf("%s %s %d\n", ogrenci1[i].isim, ogrenci1[i].soyisim, ogrenci1[i].yas);
+	}
+	
+	return 0;
+}
