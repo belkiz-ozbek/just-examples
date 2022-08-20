@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+struct ogrenci{
+	char isim[20];
+	char soyisim[20];
+	int number;
+}ogrenci1;
+
+void goster(struct ogrenci *p){
+	
+	printf("%s %s %d\n", p->isim, p->soyisim, p->number);
+	
+}
+
+int main(){
+
+	struct ogrenci ogrenci1 = {"Belkiz", "Ozbek", 452};
+	goster(&ogrenci1);
+	
+	return 0;
+}
