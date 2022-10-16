@@ -1,0 +1,32 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package javaapplication7;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author belkizozbek
+ */
+public class NewClass1 {
+    
+    public static void main(String[] args){
+        
+               int num1 = 3, num2 = 9, num3 = 6;
+        double num4 = 15.2, num5 = 63.1;
+        boolean flag = true;
+        String course = "Object Orianted Programming";
+        char ch = 'A';
+        
+        System.out.println("Course name is:"+course);
+        System.out.println("Course name is:\n"+course);
+        System.out.println("Course name is:\t"+course);
+        System.out.printf("The first number is: %d", num1);
+        System.out.print("\nTotal of integers is "+num1+num2+num3);
+        System.out.println("\nnAverage of doubles are "+(num4+num5)/2);
+        System.out.println("The flag value is: "+ flag);
+    }
+    
+}
