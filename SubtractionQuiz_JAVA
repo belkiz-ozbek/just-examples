@@ -1,0 +1,35 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package ceng_113;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author belkizozbek
+ */
+public class SubtractionQuiz {
+
+    public static void main(String[] args) {
+
+        int number1 = (int) (Math.random() * 10);
+        int number2 = (int) (Math.random() * 10);
+
+        //number1 > number2 olmalı her zaman
+        if (number2 > number1) {
+            int tut;
+            tut = number1;
+            number1 = number2;
+            number2 = tut;
+        }
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("What is " + number1 + " - " + number2 + " ?");
+        int answer = input.nextInt();
+
+        System.out.println(number1 + " - " + number2 + " = " + answer + " " + (number1 - number2 == answer));
+    }
+
+}
