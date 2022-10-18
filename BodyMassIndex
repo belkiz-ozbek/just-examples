@@ -1,0 +1,41 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package ceng_113;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author belkizozbek
+ */
+public class BodyMassIndex {
+
+    public static void main(String[] args) {
+
+        double BMI;
+
+        // BMI = weight(kilograms) / (height)^2(meters)
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter your weight(kilograms): ");
+        double weight = input.nextDouble();
+        System.out.println("Enter your height(meters)");
+        double height = input.nextDouble();
+
+        BMI = weight / (height * height);
+        
+        System.out.printf("BMI: %f%n", BMI);
+        
+        if (BMI < 18.5) {
+            System.out.println("Underweight");
+        } else if (BMI >= 18.5 && BMI < 25.0) {
+            System.out.println("Normal");
+        } else if (BMI >= 25.0 && BMI < 30.0) {
+            System.out.println("Overweight");
+        } else {
+            System.out.println("Obese");
+        }
+
+    }
+}
