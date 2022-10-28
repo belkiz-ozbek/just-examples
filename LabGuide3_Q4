@@ -1,0 +1,40 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package labguide3;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author belkizozbek
+ */
+public class Question4 {
+    
+    public static void main(String[] args){
+        
+        System.out.printf("Penalty calculation for the vehicles%n"
+                + "Less than 0 -> Wrong value %n"
+                + "Between 0-50 -> No penalty%n"
+                + "Between 51-70 -> 374 TL%n"
+                + "Between 71-90 -> 652 TL%n"
+                + "Greater than 90 -> 1340 TL%n%n");
+        
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter your velocity: ");
+        int velocity = input.nextInt();
+        
+        if(velocity < 0)
+            System.out.println("Wrong value!");
+        else if(velocity > 0 && velocity < 50)
+            System.out.println("No penalty");
+        else if(velocity > 51 && velocity < 70)
+            System.out.println("Your penalty is 374 TL");
+        else if(velocity > 71 && velocity < 90)
+            System.out.println("Your penalty is 652 TL");
+        else
+            System.out.println("Your penalty is 1340 TL");
+    }
+    
+}
