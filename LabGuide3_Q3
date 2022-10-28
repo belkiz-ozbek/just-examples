@@ -1,0 +1,36 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package labguide3;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author belkizozbek
+ */
+public class Question3 {
+    
+    public static void main(String[] args){
+        
+        int a = 1;
+                
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the sum of the numbers: ");
+        double sum = input.nextDouble();
+        
+        System.out.println("Enter the product of the numbers: ");
+        double product = input.nextDouble();
+        
+        double b = -sum;
+        double c = product;
+        
+        double x1 = (-b + Math.pow((b*b - 4*a*c), 0.5)) / (2*a);
+        double x2 = (-b - Math.pow((b*b - 4*a*c), 0.5)) / (2*a);
+        
+        System.out.printf("These numbers are %.1f and %.1f", x1, x2);
+        
+    }
+    
+}
