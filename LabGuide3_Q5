@@ -1,0 +1,30 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package labguide3;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author belkizozbek
+ */
+public class Question5 {
+    
+    public static void main(String[] args){
+        
+       Scanner input = new Scanner(System.in);
+       System.out.println("Enter an age: ");
+       int age = input.nextInt();
+       
+       if(age > 0 && age < 17)
+           System.out.println("You can not work");
+       else if(age > 17 && age < 65)
+           System.out.println("You can work");
+       else
+           System.out.println("You can not work");
+        
+    }
+    
+}
