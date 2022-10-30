@@ -1,0 +1,31 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package labguide3;
+
+/**
+ *
+ * @author belkizozbek
+ */
+public class Question2 {
+
+    public static void main(String[] args) {
+
+        int a = 5, b = 5, c = 10;
+        int result;
+        boolean resultBool = (a == b) && (c>b);
+        boolean resultBool2 = (a == b) && (c < b);
+        boolean resultBool3 = (a == b) || (c < b);
+        boolean resultBool4 = (a != b) || (c < b);
+        boolean resultBool5 = !(a != b);
+        boolean resultBool6 = !(a == b);
+        System.out.println("(a == b) && (c>b) is " + (resultBool ? 1 : 0));
+        System.out.println("(a == b) && (c < b) is " + ((resultBool2) ? 1 : 0));
+        System.out.println("(a == b) || (c < b) is " + ((resultBool3) ? 1 : 0));
+        System.out.println("(a != b) || (c < b) is " + (resultBool4 ? 1 : 0));
+        System.out.println("!(a != b) is " + (resultBool5 ? 1 : 0));
+        System.out.println("!(a == b) is " + (resultBool6 ? 1 : 0));
+    }
+
+}
