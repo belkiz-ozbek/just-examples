@@ -1,0 +1,25 @@
+package repeatadditionquiz;
+
+import java.util.Scanner;
+
+public class RepeatAdditionQuiz {
+
+    public static void main(String[] args) {
+
+        int a = (int) (Math.random() * 10);
+        int b = (int) (Math.random() * 10);
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("What is " + a + " + " + b + "?");
+        int answer = input.nextInt();
+
+        while (a + b != answer) {
+
+            System.out.println("What is " + a + " + " + b + "?");
+            answer = input.nextInt();
+
+        }
+
+    }
+
+}
