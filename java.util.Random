@@ -1,0 +1,23 @@
+package mathrandomclass;
+
+public class MathRandomClass {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        java.util.Random random1 = new java.util.Random(3);
+        System.out.print("From random1: ");
+        for(int i = 0; i < 10; i++)
+            System.out.print((int)random1.nextInt(1000) + " ");
+        
+        
+        java.util.Random random2 = new java.util.Random(3);
+        System.out.print("\nFrom random2: ");
+        for(int i = 0; i < 10; i++)
+            System.out.print((int)random2.nextInt(1000) + " ");
+    }
+    
+}
