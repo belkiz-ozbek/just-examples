@@ -1,0 +1,32 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package labguide4;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author belkizozbek
+ */
+public class Q4 {
+    
+    public static void main(String[] args){
+        
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a four-digit binary string: ");
+        String bin = input.nextLine();
+        
+        int sum = 0;
+        if(bin.charAt(0) == '1')  sum += 8;
+        if(bin.charAt(1) == '1')  sum += 4;
+        if(bin.charAt(2) == '1')  sum += 2;
+        if(bin.charAt(3) == '1')  sum += 1;
+            
+        
+        System.out.println("The decimal number for " + bin + " is: " + sum);
+        
+    }
+    
+}
