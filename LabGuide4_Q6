@@ -1,0 +1,31 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package labguide4;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author belkizozbek
+ */
+public class Q6 {
+
+    public static void main(String[] main) {
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a floating-point number: ");
+        double number = input.nextDouble();
+        int decimalPartInt = (int)number;
+        String decimalPartStr = decimalPartInt + "";
+        System.out.println(decimalPartStr);
+        System.out.printf("The number of digits before "
+                + "the decimal point in %.1f is %d\n"
+                , number, decimalPartStr.length());
+        
+      
+        
+    }
+
+}
