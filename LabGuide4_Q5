@@ -1,0 +1,33 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package labguide4;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author belkizozbek
+ */
+public class Q5 {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a decimal number between 0 and 15:");
+        int number = input.nextInt();
+
+        /*
+        int a = number % 2;
+        int b = number / 2 % 2;
+        int c = number / 4 % 2;
+        int d = number / 8 % 2;
+
+        System.out.println("The binary number for " + number + " is " + d + c + b + a);
+         */
+        String bin = Integer.toBinaryString(number);
+        System.out.println("The binary number for " + number + " is " + bin);
+    }
+
+}
