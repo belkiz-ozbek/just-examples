@@ -1,0 +1,31 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package labguide4;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author belkizozbek
+ */
+public class Q2 {
+
+    public static void main(String[] args) {
+
+        double g = 9.8;
+        
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the mass of the cart: ");
+        double mass = input.nextInt();
+        System.out.println("Enter the force to push the car: ");
+        int force = input.nextInt();
+        
+        double a = Math.toDegrees(force / (mass * g)); 
+         
+        System.out.printf("The angle of the ramp is %.1f degrees", a);
+        
+    }
+
+}
