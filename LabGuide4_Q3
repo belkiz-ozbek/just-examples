@@ -1,0 +1,25 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package labguide4;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author belkizozbek
+ */
+public class Q3 {
+    
+    public static void main(String[] args){
+        
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a string: ");
+        String str = input.nextLine();
+        str = str.trim();
+        System.out.println("The last character is " + str.charAt(str.length() - 1) );
+        
+    }
+    
+}
