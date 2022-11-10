@@ -1,0 +1,34 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package labguide5;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author belkizozbek
+ */
+public class Q5 {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the value of x: ");
+        int x = input.nextInt();
+        double term = 0;
+        double result = 0;
+        int i = 1;
+        while (term <= 1000) {
+            
+            term = Math.pow(x, i) / (2 * i);
+            result += term;
+            i++;
+        }
+
+        System.out.printf("The result is %.2f ", result-term);
+
+    }
+
+}
