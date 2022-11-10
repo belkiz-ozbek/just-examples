@@ -1,0 +1,47 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package labguide5;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author belkizozbek
+ */
+public class Q3_b {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a positive integer: ");
+        int number = input.nextInt();
+        int say1 = 0;
+        int say2 = 0;
+
+        while (number < 0) {
+            System.out.println(number + " is not a positive value!");
+            System.out.println("Enter a positive integer: ");
+            number = input.nextInt();
+
+        }
+
+        while (number != 1) {
+            if (number % 2 == 0) {
+                number /= 2;
+                System.out.println("Next value is " + number);
+                say1++;
+
+            } else {
+                number = number * 3 + 1;
+                System.out.println("Next value is " + number);
+                say2++;
+            }
+
+        }
+
+        System.out.println("Number of steps " + (say1 + say2));
+
+    }
+}
