@@ -11,35 +11,34 @@ import java.util.Scanner;
  * @author belkizozbek
  */
 public class Q2 {
-    
+
     public static void main(String[] args) {
-        
+
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter characters ending with *: ");
         char ch = scan.nextLine().charAt(0);
         int countUp = 0;
         int countLow = 0;
         int countDgt = 0;
-                
-        
-        while(ch != '*'){
-            
-            if(ch > 'A' && ch < 'Z')
+
+        while (ch != '*') {
+
+            if (ch >= 'A' && ch <= 'Z') {
                 countUp++;
-            else if(ch > 'a' && ch < 'z')
+            } else if (ch >= 'a' && ch <= 'z') {
                 countLow++;
-            else
+            } else if (ch >= '1' && ch <= '9') {
                 countDgt++;
-            
+            }
+
+            ch = scan.nextLine().charAt(0);
+
         }
-        
+
         System.out.println("There are " + countUp + " uppercase, and "
-                + countLow + " lowercase letter(s), and " 
-                + countDgt + "digit(s)");
-        
-        
-        
+                + countLow + " lowercase letter(s), and "
+                + countDgt + " digit(s)");
+
     }
-    
-    
+
 }
