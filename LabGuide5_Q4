@@ -1,0 +1,40 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package labguide5;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author belkizozbek
+ */
+public class Q4 {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a number reversed: ");
+        int num = input.nextInt();
+        int sayac = 0;
+
+        while (num != 0) {
+
+            if (num < 0) {
+                System.out.println("Wrong number!!");
+            } else {
+                System.out.print("Reversed order is ");
+                while (num > 0) {
+                    System.out.print(num % 10);
+                    num /= 10;
+                }
+
+            }
+            System.out.print("\nEnter a number reversed: ");
+            num = input.nextInt();
+        }
+
+    }
+
+}
