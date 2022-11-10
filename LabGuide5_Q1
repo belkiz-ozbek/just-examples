@@ -1,0 +1,43 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package labguide5;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author belkizozbek
+ */
+public class LabGuide5 {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int number = input.nextInt();
+        int countPos = 0;
+        int countNeg = 0;
+        int sum = 0;
+
+        while (number != 0) {
+
+            if (number > 0) {
+                countPos++;
+            } else {
+                countNeg++;
+            }
+
+            sum += number;
+            System.out.println("Enter a number:");
+            number = input.nextInt();
+
+        }
+
+        System.out.println("Number of negative numbers " + countNeg);
+        System.out.println("Number of positive numbers " + countPos);
+        System.out.println("Sum of numbers " + sum);
+    }
+
+}
