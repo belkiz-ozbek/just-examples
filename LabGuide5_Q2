@@ -1,0 +1,45 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package labguide5;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author belkizozbek
+ */
+public class Q2 {
+    
+    public static void main(String[] args) {
+        
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter characters ending with *: ");
+        char ch = scan.nextLine().charAt(0);
+        int countUp = 0;
+        int countLow = 0;
+        int countDgt = 0;
+                
+        
+        while(ch != '*'){
+            
+            if(ch > 'A' && ch < 'Z')
+                countUp++;
+            else if(ch > 'a' && ch < 'z')
+                countLow++;
+            else
+                countDgt++;
+            
+        }
+        
+        System.out.println("There are " + countUp + " uppercase, and "
+                + countLow + " lowercase letter(s), and " 
+                + countDgt + "digit(s)");
+        
+        
+        
+    }
+    
+    
+}
