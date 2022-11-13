@@ -1,0 +1,59 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package sayitahminoyunu;
+
+import java.util.Random;
+import java.util.Scanner;
+
+/**
+ *
+ * @author belkizozbek
+ */
+public class SayiTahminOyunu {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+
+        Random rand = new Random();
+        Scanner input = new Scanner(System.in);
+        int sayi = rand.nextInt(100);   //random sayısı 0 ile 100 arasında bir sayı
+        int can = 5;
+        boolean oyunDurumu = false;
+        System.out.println(sayi);
+
+        while (can > 0) {
+
+            System.out.println("Tahmininiz: ");
+            int tahmin = input.nextInt();
+
+            if (tahmin < 0 || tahmin > 100) {
+                System.out.println("Lutfen 0-100 arasında bir sayı giriniz: ");
+                continue;
+            }
+
+            if (tahmin == sayi) {
+                oyunDurumu = true;
+                --can;
+                break;
+
+            } else {
+                System.out.println("Yanlış tahmin! Tekrar deneyiniz: can: " + (--can));
+                tahmin = input.nextInt();
+            }
+
+        }
+
+        if (oyunDurumu) {
+            System.out.println("Doğru tahmin!! can: " + (can));
+        } else {
+            System.out.println("Basaramadiniz.");
+
+        }
+
+    }
+
+}
