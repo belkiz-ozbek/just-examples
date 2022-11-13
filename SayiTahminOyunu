@@ -25,13 +25,14 @@ public class SayiTahminOyunu {
         boolean oyunDurumu = false;
         System.out.println(sayi);
 
+        System.out.println("Tahmininiz: ");
+        int tahmin = input.nextInt();
+        
         while (can > 0) {
 
-            System.out.println("Tahmininiz: ");
-            int tahmin = input.nextInt();
-
             if (tahmin < 0 || tahmin > 100) {
-                System.out.println("Lutfen 0-100 arasında bir sayı giriniz: ");
+                System.out.println("Lutfen 0-100 arasında bir sayı giriniz: can: " + --can);
+                tahmin = input.nextInt();
                 continue;
             }
 
