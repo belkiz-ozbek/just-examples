@@ -1,0 +1,45 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package findaverage;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author belkizozbek
+ */
+public class FindAverage {
+
+    /**
+     * @param args the command line arguments
+     */
+    static int notlariAl() {
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Notunuzu girin: ");
+        int not = input.nextInt();
+        return not;
+
+    }
+
+    public static void main(String[] args) {
+
+        int sum = 0;
+
+        int[] notlar = new int[7];
+
+        for (int i = 0; i < 7; i++) {
+            notlar[i] = notlariAl();
+           
+            
+        }
+
+        for (int j = 0; j < 7; j++) {
+            sum += notlar[j];
+        }
+        System.out.println("Average is: " + sum / 7);
+    }
+
+}
