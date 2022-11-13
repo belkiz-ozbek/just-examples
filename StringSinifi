@@ -1,0 +1,30 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package stringsinifi;
+
+/**
+ *
+ * @author belkizozbek
+ */
+public class StringSinifi {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+
+        String metin = "KODLAMA HELLO";
+        String metin2 = " VAKTİ";
+        System.out.println(metin.length());
+        System.out.println(metin + metin2);
+        System.out.println(metin.concat(metin2));
+        System.out.println(metin.indexOf('L'));
+        System.out.println(metin.charAt(1));
+        System.out.println(metin.endsWith("LLO"));
+        System.out.println(metin.replace("HELLO", "VAKTİ"));
+        System.out.println(metin.toLowerCase());
+    }
+
+}
