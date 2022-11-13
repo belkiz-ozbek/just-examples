@@ -1,0 +1,36 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package findaverage;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author belkizozbek
+ */
+public class NewClass {
+
+    public static void main(String[] args) {
+
+        int[] notlar = new int[7];
+        int sum = 0;
+        
+        Scanner input = new Scanner(System.in);
+        notlar[0] = input.nextInt();
+        notlar[1] = input.nextInt();
+        notlar[2] = input.nextInt();
+        notlar[3] = input.nextInt();
+        notlar[4] = input.nextInt();
+        notlar[5] = input.nextInt();
+        notlar[6] = input.nextInt();
+        
+        for(int not: notlar){
+            sum += not;
+        }
+        
+        System.out.println(sum/notlar.length);
+
+    }
+}
