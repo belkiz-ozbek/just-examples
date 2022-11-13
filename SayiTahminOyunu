@@ -35,7 +35,7 @@ public class SayiTahminOyunu {
                 continue;
             }
 
-            if (tahmin == sayi) {
+            if (sayi == tahmin) {
                 oyunDurumu = true;
                 --can;
                 break;
