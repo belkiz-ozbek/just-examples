@@ -1,0 +1,33 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package palindrom;
+
+/**
+ *
+ * @author belkizozbek
+ */
+public class Palindrom {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        String str = "setes", tmp = "";
+
+        for (int i = str.length() - 1; i >= 0; i--) {
+
+            tmp += str.charAt(i);
+
+        }
+        
+        if(tmp.equals(str)){
+            System.out.println("Polindromik");
+        }
+        else{
+            System.out.println("Not polindromik");
+        }
+    }
+
+}
