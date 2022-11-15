@@ -1,0 +1,29 @@
+package methodbasic;
+
+public class MethodBasic {
+    
+    public static int max(int i, int j){
+        
+        int result;
+        
+        if(i > j){
+            result = i;
+        }
+        else
+            result = j;
+        
+        return result;
+        
+    }
+
+    public static void main(String[] args) {
+        
+        int i = 3;
+        int j = 7;
+        
+        int k = max(i, j);
+        System.out.println("The maximum between " + i + " and "
+                + j + " is " + k);
+        
+    }
+}
