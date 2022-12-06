@@ -1,0 +1,27 @@
+package labguide7;
+
+import java.util.Scanner;
+
+public class Q2 {
+    
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        double sum = 0; 
+        double[] array = {6.5, 4.15, 3.50, 2.30, 3.45, 4.80, 8.10, 4.15, 3.10, 2.76};
+        int arr[] = {0,0,0,0,0,0,0,0,0,0};
+        
+        for(int i = 0; i < 10; i++){
+            System.out.print("Enter the quantity of item " + (i+1) + ":");
+            arr[i] = input.nextInt();
+           
+        }
+        
+        for(int i = 0; i < 10; i++){
+            sum += array[i] * arr[i];
+        }
+        
+        System.out.printf("\nThe total cost is %.f", sum);
+        
+    }
+}
