@@ -1,0 +1,47 @@
+
+import java.util.Scanner;
+
+public class NewClass {
+
+    public static char[] eliminateBlank(char[] input) {
+
+        char[] output = new char[input.length];
+
+        int outputIndex = 0;
+        int numBlanks = 0;
+
+        for (int i = 0; i < input.length; i++) {
+
+            if (input[i] == ' ') {
+                numBlanks++;
+            } else {
+                numBlanks = 0;
+            }
+
+            if (numBlanks > 1) {
+                continue;
+            }
+
+            output[outputIndex] = input[i];
+
+            outputIndex++;
+        }
+
+        return output;
+    }
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a sentence:");
+        String str = input.nextLine();
+
+        char[] arr = new char[100];
+        arr = str.toCharArray();
+
+        //Remove extra blanks from the array
+        System.out.println(eliminateBlank(arr));
+
+    }
+
+}
