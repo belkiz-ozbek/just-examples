@@ -1,0 +1,41 @@
+
+import java.util.Scanner;
+
+public class NewClass1 {
+
+    public static int decimalValue(int base, int number) {
+
+        int bsmkSayisi = 0;
+        int decimal = 0;
+
+        int temp = number;
+
+        //basamak sayısını hesapla
+        while (temp > 0) {
+            temp /= 10;
+            bsmkSayisi++;
+        }
+
+        for (int i = 0; i < bsmkSayisi; i++) {
+            int rakam = number % 10;
+            number /= 10;
+            decimal += (int) Math.pow(base, i) * rakam;
+        }
+
+        return decimal;
+    }
+
+    public static void main(String[] args) {
+
+        //Q1
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the base: ");
+        int base = input.nextInt();
+        System.out.println("Enter the number: ");
+        int number = input.nextInt();
+
+        System.out.println("Decimal value of the number " + number
+                + " in base " + base + " is " + decimalValue(base, number));
+
+    }
+}
