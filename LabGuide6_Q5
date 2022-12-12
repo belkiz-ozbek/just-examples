@@ -1,0 +1,39 @@
+
+import java.util.Scanner;
+
+public class Q5 {
+
+    public static void print(int number) {
+
+        for (int i = 0; i < number; i++) {
+
+            for (int j = 0; j <= i; j++) {
+                System.out.print(j + 1);
+            }
+
+            for (int k = (number - 1); k > i; k--) {
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+
+    }
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        int number = 1;
+
+        while (number != 0) {
+
+            System.out.println("Enter a number (1-9 or non-positive to stop): ");
+            number = input.nextInt();
+            if (number >= 1 && number <= 9) {
+                print(number);
+            }
+
+        }
+
+    }
+}
