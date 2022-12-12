@@ -1,0 +1,48 @@
+
+import java.util.Scanner;
+
+public class Q2 {
+
+    public static int calculate(int credit, int year) {
+
+        int tuition = 0;
+
+        if (credit <= 12) {
+            tuition = credit * 525;
+            if (year == 4) {
+                tuition *= 0.85;
+            }
+        } else {
+            tuition = 4500 + 750 * (credit - 12);
+            if (year == 4) {
+                tuition *= 0.85;
+            }
+        }
+
+        return tuition;
+    }
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter the student id (-1 to exit): ");
+        double id = input.nextDouble();
+
+        while (id != -1) {
+
+            System.out.println("Enter the credit: ");
+            int credit = input.nextInt();
+            System.out.println("Enter year: ");
+            int year = input.nextInt();
+
+            System.out.println("Student with id " + id
+                    + " will pay tuition " + calculate(credit, year));
+
+            System.out.println("Enter the student id (-1 to exit): ");
+            id = input.nextDouble();
+
+        }
+
+    }
+}
