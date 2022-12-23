@@ -1,0 +1,32 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.*;
+
+public class JavaApplication17 {
+
+   
+    public static void main(String[] args) {
+        
+        JFrame frame = new JFrame("Buton örneği");
+        
+        JButton buton = new JButton("butonn");
+        buton.setText("GÖNDER");
+        buton.setBounds(0, 0, 100, 50);
+        buton.addActionListener(new ActionListener(){
+            
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("Butona tıklandı!");
+            }
+            
+        });
+        
+        
+        frame.add(buton);
+        frame.setSize(400, 400);
+        frame.setLayout(null);
+        frame.setVisible(true);     // görüntüyü göster, frame'i gösterme yeteneği true
+        
+    }
+    
+}
